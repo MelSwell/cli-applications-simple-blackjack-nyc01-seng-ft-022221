@@ -46,10 +46,7 @@ def hit?(card_total)
 end
 
 def invalid_command
-  welcome
-  initial_round
-  display_card_total(display_card_total)
-  hit?(card_total)
+  puts "Please enter a valid command"
 end
 
 #####################################################
@@ -57,6 +54,9 @@ end
 #####################################################
 
 def runner
-  # code runner here
+   welcome
+  initial_round
+  display_card_total(display_card_total)
+  hit?(card_total)
 end
     
