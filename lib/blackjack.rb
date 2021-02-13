@@ -36,7 +36,12 @@ def hit?(card_total)
   case input
   when "h"
     card_total += deal_card
+    card_total
   when "s"
+    card_total
+  else
+    "Please enter a valid command"
+    prompt_user
   end
 end
 
