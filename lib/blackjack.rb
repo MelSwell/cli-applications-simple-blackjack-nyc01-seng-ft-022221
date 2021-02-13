@@ -40,13 +40,12 @@ def hit?(card_total)
   when "s"
     card_total
   else
-    "Please enter a valid command"
-    prompt_user
+    invalid_command
   end
 end
 
 def invalid_command
-  # code invalid_command here
+  "# code invalid_command here"
 end
 
 #####################################################
