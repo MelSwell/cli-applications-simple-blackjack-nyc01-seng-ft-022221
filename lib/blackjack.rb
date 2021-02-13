@@ -1,3 +1,4 @@
+require 'pry'
 def welcome
   puts "Welcome to the Blackjack Table"
 end
@@ -8,6 +9,7 @@ def deal_card
 end
 
 def display_card_total(card)
+  binding.pry
   puts "Your cards add up to #{card}"
 end
 
