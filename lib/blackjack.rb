@@ -27,7 +27,7 @@ end
 def initial_round
   card_total = deal_card + deal_card
   display_card_total(card_total)
-  card_total
+  return card_total
 end
 
 def hit?(card_total)
@@ -36,7 +36,6 @@ def hit?(card_total)
   case input
   when "h"
     card_total += deal_card
-    display_card_total(card_total)
   when "s"
     card_total
   else
